@@ -9,7 +9,9 @@ export default ({ data }) => (
     <article className="sheet">
       <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags} />
       <div className="sheet__inner">
+        <a class="back" href="/">Back</a>
         <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
+        <a href="{data.datoCmsWork.url}" class="url">{data.datoCmsWork.title}{data.datoCmsWork.site}</a>
         <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
         <div className="sheet__slider">
         <Slider autoplay adaptiveHeight={true} speed={500} infinite={true} slidesToShow={1} arrows={true} fade={true} dots>
