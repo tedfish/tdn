@@ -22,6 +22,9 @@ const IndexPage = ({ data }) => (
               <div className="card__description">
                 <p>{work.excerpt}</p>
               </div>
+              <div className="card__date">
+                <p>{work.date}</p>
+              </div>
             </figcaption>
           </figure>
         </div>
@@ -38,6 +41,7 @@ export const query = graphql`
           id
           role
           title
+          date
           slug
           excerpt
           coverImage {
