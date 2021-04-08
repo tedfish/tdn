@@ -14,6 +14,7 @@ export default ({ data }) => (
           <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
           <a href={data.datoCmsWork.site} rel="noreferrer" target="_blank" class="site">{data.datoCmsWork.site}</a>
         </div>
+        <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
         <div className="max">
           <div className="sheet__slider">
             <Slider autoplay adaptiveHeight={true} speed={500} infinite={true} slidesToShow={1} arrows={true} fade={true} dots>
@@ -24,16 +25,16 @@ export default ({ data }) => (
           </div>
         </div>
         <div className="sheet__content">
-        <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
-        <div
-          className="sheet__body"
-          dangerouslySetInnerHTML={{
-            __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
-          }}
-        />
-      </div>
-        <Img fluid={data.datoCmsWork.coverImage.fluid} />
+          <div
+            className="sheet__body"
+            dangerouslySetInnerHTML={{
+              __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
+            }}
+          />
         </div>
+        <Img fluid={data.datoCmsWork.coverImage.fluid} />
+        <a class="back" href="/">&laquo; Back to My Portfolio</a>
+      </div>
     </article>
   </Layout>
 )

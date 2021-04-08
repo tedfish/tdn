@@ -3,10 +3,9 @@ import { graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
-
 const About = ({ data: { about } }) => (
   <Layout>
-    <article className="sheet">
+    <article className="sheet sheet__about">
       <HelmetDatoCms seo={about.seoMetaTags} />
       <div className="sheet__inner">
         <h1 className="sheet__title">{about.title}</h1>
@@ -24,9 +23,7 @@ const About = ({ data: { about } }) => (
     </article>
   </Layout>
 )
-
 export default About
-
 export const query = graphql`
   query AboutQuery {
     about: datoCmsAboutPage {
