@@ -39,6 +39,20 @@
     box-sizing: border-box
     padding: 40px
     background-color: $light-bg-color
+    position: relative
+    &:before  
+      content: ""
+      background-image: url('https://source.unsplash.com/random')
+      background-size: cover
+      position: absolute
+      top: 0px
+      right: 0px
+      bottom: 0px
+      left: 0px
+      opacity: 0.75
+      filter: grayscale(.95)
+      
+      // filter: saturate(2.2)
 
   .container__body
     flex: 1
