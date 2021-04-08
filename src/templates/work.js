@@ -9,27 +9,31 @@ export default ({ data }) => (
     <article className="sheet">
       <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags} />
       <div className="sheet__inner">
-        <a class="back" href="/">Back</a>
-        <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
-        <a href="{data.datoCmsWork.url}" class="url">{data.datoCmsWork.title}{data.datoCmsWork.site}</a>
-        <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
-        <div className="sheet__slider">
-        <Slider autoplay adaptiveHeight={true} speed={500} infinite={true} slidesToShow={1} arrows={true} fade={true} dots>
-            {data.datoCmsWork.gallery.map(({ fluid }) => (
-              <img alt={data.datoCmsWork.title} key={fluid.src} src={fluid.src} />
-            ))}
-          </Slider>
+        <div className="top">
+          <a class="back" href="/">&laquo; Back to My Portfolio</a>
+          <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
+          <a href={data.datoCmsWork.site} rel="noreferrer" target="_blank" class="site">{data.datoCmsWork.site}</a>
         </div>
+        <div className="max">
+          <div className="sheet__slider">
+            <Slider autoplay adaptiveHeight={true} speed={500} infinite={true} slidesToShow={1} arrows={true} fade={true} dots>
+              {data.datoCmsWork.gallery.map(({ fluid }) => (
+                <img alt={data.datoCmsWork.title} key={fluid.src} src={fluid.src} />
+              ))}
+            </Slider>
+          </div>
+        </div>
+        <div className="sheet__content">
+        <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
         <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
           }}
         />
-        <div className="sheet__gallery">
-          <Img fluid={data.datoCmsWork.coverImage.fluid} />
-        </div>
       </div>
+        <Img fluid={data.datoCmsWork.coverImage.fluid} />
+        </div>
     </article>
   </Layout>
 )
@@ -40,6 +44,7 @@ export const query = graphql`
         ...GatsbyDatoCmsSeoMetaTags
       }
       title
+      site
       excerpt
       gallery {
         fluid(maxWidth: 200, imgixParams: { fm: "jpg", auto: "compress" }) {
