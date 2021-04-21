@@ -1,5 +1,8 @@
 .card
-  box-shadow: 0 0 5px #ccc
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 .card__role
   font-size: 15px
   line-height: 1
@@ -47,13 +50,15 @@
   padding: 20px;
 .card__title
   a
-    text-transform: uppercase
+    
     text-decoration: none
     font-weight: 700
-    font-size: 20px
+    font-size: 25px
     color: $accent-color
+    display: block
+    padding: 0 0 5px
     &:hover
-      border-bottom: dotted 1px #9055a2
+      color: $accent-hover
 .card__description
   color: $dark-body-color
   font-size: 17.5px

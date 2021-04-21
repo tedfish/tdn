@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
           <div className="container__sidebar">
             <div className="sidebar">
             <div className="profile">
-            <Link to="/about"><img src="https://www.datocms-assets.com/45905/1619031028-tdn.jpg" alt="Ted D Nguyen" /></Link>
+            <Link to="/"><img src="https://www.datocms-assets.com/45905/1619031028-tdn.jpg" alt="Ted D Nguyen" /></Link>
               </div>
               <h6 className="sidebar__title">
                 <Link to="/about">{data.datoCmsSite.globalSeo.siteName}</Link>

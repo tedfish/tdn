@@ -25,6 +25,7 @@ export default ({ data }) => (
           </div>
         </div>
         <div className="sheet__content">
+          <h3>About this project</h3>
           <div
             className="sheet__body"
             dangerouslySetInnerHTML={{
