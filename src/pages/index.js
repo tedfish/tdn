@@ -1,54 +1,34 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Masonry from 'react-masonry-component'
+import {  graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Layout from "../components/layout"
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data: { home } }) => (
   <Layout>
-    <Masonry className="showcase">
-      {data.allDatoCmsWork.edges.map(({ node: work }) => (
-        <div key={work.id} className="showcase__item">
-          <figure className="card">
-            <Link to={`/works/${work.slug}`} className="card__image">
-              <Img fluid={work.coverImage.fluid} />
-            </Link>
-            <figcaption className="card__caption">
-              <h6 className="card__title">
-                <Link to={`/works/${work.slug}`}>{work.title}</Link>
-              </h6>
-              <div className="card__role">
-                <p>{work.role}</p>
-              </div>
-              <div className="card__description">
-                <p>{work.excerpt}</p>
-              </div>
-              <div className="card__date">
-                <p>{work.date}</p>
-              </div>
-            </figcaption>
-          </figure>
+    <article className="sheet sheet__about">
+      <HelmetDatoCms seo={home.seoMetaTags} />
+      <div className="sheet__inner">
+        <h1 className="sheet__title">{home.title}</h1>
+        <p className="sheet__lead">{home.subtitle}</p>
+        <div className="sheet__gallery">
+          <Img fluid={home.photo.fluid} />
         </div>
-      ))}
-    </Masonry>
+      </div>
+    </article>
   </Layout>
 )
 export default IndexPage
 export const query = graphql`
-  query IndexQuery {
-    allDatoCmsWork(sort: { fields: [position], order: ASC }) {
-      edges {
-        node {
-          id
-          role
-          title
-          date
-          slug
-          excerpt
-          coverImage {
-            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
-            }
-          }
+  query HomeQuery {
+    home: datoCmsHome {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+      title
+      subtitle
+      photo {
+        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
+          ...GatsbyDatoCmsSizes
         }
       }
     }
