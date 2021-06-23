@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "theme": "elegant"
+  },
+  "basics": {
+    "name": "Ted Nguyen",
+    "label": "Experienced E-Commerce Web Developer",
+    "image": "1619031028-tdn.jpg",
+    "email": "ted.d.nguyen@gmail.com",
+    "phone": "(949) 365-4879",
+    "website": "https://haveyoumetted.com/",
+    "summary": "I want to build and grow Shopify websites in a fast-paced & challenging environment.",
+    "location": {
+      "address": "2520 Alexander Court",
+      "postalCode": "92782",
+      "city": "Tustin",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "ted-nguyen-a4a3705",
+        "url": "https://www.linkedin.com/in/ted-nguyen-a4a3705/"
+      },
+      {
+        "network": "Github",
+        "username": "tedfish",
+        "url": "https://github.com/tedfish"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Leap Grow",
+      "highlights": [
+        "Alpha Foods | Shopify Build",
+        "Nowadays | Shopify Build",
+        "Lavva | Woo Commerce Management"
+      ],
+      "position": "Freelance Shopify Developer",
+      "startDate": "2019-11",
+      "url": "https://leapgrow.co/",
+      "summary": "Shopify developer with a focus on plant-based foods."
+    },
+    {
+      "company": "Darn Digital",
+      "highlights": [
+        "Charming Charlie | Shopify Build",
+        "AFO Golf | Shopify Build",
+        "Tiger Tail USA | WooCommerce Migration"
+      ],
+      "position": "Freelance E-Commerce Developer",
+      "startDate": "2018-07",
+      "url": "https://darndigital.com/",
+      "summary": "Responsible for e-commerce development with a focus on apparel."
+    },
+    {
+      "company": "Faveable",
+      "highlights": [
+        "Alpha Foods | Shopify Build",
+        "Nowadays | Shopify Build",
+        "Lavva | Woo Commerce Management"
+      ],
+      "position": "Co-Founder/LAMP Developer",
+      "startDate": "2014-04",
+      "endDate": "2020-06",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "company": "Convertico",
+      "highlights": [
+        "Embeddable JS plugin",
+        "Customer facing website",
+        "Client reporting and dashboard"
+      ],
+      "position": "Developer",
+      "startDate": "2018-11",
+      "endDate": "2020-04",
+      "url": "https://convertico.io",
+      "summary": "Built a Javascript plug-in platform to collect and notify customers via SMS and email."
+    },
+    {
+      "company": "RED Digital Cinema",
+      "endDate": "2018-07",
+      "highlights": [
+        "Managed platform migration to Netsuite",
+        "Rebuilt RED Tools app",
+        "Built RED Studios Website"
+      ],
+      "position": "Director of Web & E-Commerce",
+      "startDate": "2015-01",
+      "url": "https://red.com/",
+      "summary": "Responsible for RED's online properties and managed a small team of developers."
+    },
+    {
+      "company": "Cisco Systems",
+      "endDate": "2014-07",
+      "highlights": ["Linksys.com", "Flip.com", "NetworkMagic.com"],
+      "position": "Interactive Development Manager",
+      "startDate": "2008-03",
+      "url": "https://cisco.com",
+      "summary": "Managed Cisco's Consumer websites."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "UC Agriculture & Natural Resources",
+      "position": "Volunteer",
+      "startDate": "2020-02",
+      "url": "https://ucanr.edu/",
+      "summary": "Connects the power of UC research in agriculture, natural resources, nutrition and youth development with local communities to improve the lives of all Californians."
+    },
+    {
+      "organization": "Boy Scouts of America",
+      "position": "Parent Volunteer",
+      "startDate": "2016-09",
+      "url": "https://scouting.org/",
+      "summary": "Assist as a mentor and guide for outdoor youth programs."
+    },
+    {
+      "organization": "Broadcom Foundation",
+      "startDate": "2015-12",
+      "position": "Wordpress Developer",
+      "url": "http://broadcomfoundation.org/",
+      "summary": "To advance science, technology, engineering and math (stem) education by increasing opportunities to achieve success through equitable access to stem pathways."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Irvine",
+      "area": "BA Political Science",
+      "studyType": "",
+      "startDate": "1993-12-31",
+      "endDate": "1997-12-31",
+      "url": "https://uci.edu",
+      "gpa": "",
+      "courses": ["Minors: Computer Science, Digital Arts"]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "LAMP",
+        "Wordpress",
+        "React",
+        "Git",
+        "Mobile"
+      ]
+    },
+    {
+      "name": "E-commerce",
+      "level": "",
+      "keywords": ["Shopify", "Woo Commerce", "Magento", "Custom Built"]
+    },
+    {
+      "name": "Shopify Development",
+      "level": "",
+      "keywords": ["Liquid", "Theme Kit", "API Integration", "ReCharge"]
+    },
+    {
+      "name": "Digital Marketing",
+      "level": "",
+      "keywords": ["Analytics", "SEO", "Strategy"]
+    }
+  ]
+}
