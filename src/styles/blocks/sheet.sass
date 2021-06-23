@@ -7,7 +7,6 @@
     object-fit: cover
     border: 20px solid rgba(0, 0, 0, .125)
     border-radius: 50%
-    
 .back
   text-decoration: none
   font-weight: 
@@ -28,80 +27,71 @@
   margin: 0 0 25px
   padding: 50px 25px
   background: $light-body-color
-
 .sheet
   padding: 0
+.sheet__home
+  background: $light-bg-color
+  .sheet__title
+    text-align: center
+    line-height: 2
+    color: $light-bg-color
+    font-size: 50px
+    background: $accent-hover
+  .content_container
+    text-align: center
+    color: $light-body-color
+    .sheet__lead
+      font-size: 25px
+      color: $border-color
+      background: $base-body-color
+      font-weight: 500
+      line-height: 2
+    .sheet__introText
+      padding: 25px 50px
+      font-size: 35px
+      font-weight: 200
+      background: $card-color
 
 .sheet__about
   padding: 50px !important
   background: $light-body-color
-
 .sheet__content
   text-align: center
   padding: 50px
 .sheet__inner
   // max-width: 600px
   // width: 800px
-
-.sheet__title
-  font-size: 30px
-  margin-bottom: 0
-  font-weight: 700
-  color: $accent-color
-  line-height: 1
-
-.sheet__lead
-  font-size: 15px
-  padding: 10px
-  color: $base-body-color
-  text-align: center
-  font-weight: 500
-  
-
 .sheet__gallery,
 .sheet__slider
-  
   max-width: 800px
-  
   width: 100%
-
 .sheet__body
   margin: 15px auto
   color: $dark-body-color
   font-size: 20px
   font-weight: 500
   text-align: left
-
   h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol
     margin-bottom: 20px
-
     &:last-child
       margin-bottom: 0
-
   h1, h2, h3, h4, h5, h6
     font-weight: bold
     margin-top: 40px
     color: $dark-body-color
-
   h1
     font-size: 3em
-
   h2
     font-size: 2em
-
   h3
     font-size: 1.5em
-
   li
     margin-left: 20px
     margin-bottom: 5px
-
   ol li
     list-style-type: decimal
-
   ul li
     list-style-type: disc
-
   blockquote
     border-left: 4px solid $active-color
     font-size: 1.1em
@@ -112,19 +102,11 @@
     margin: 0
     padding: 0
 @media screen and (min-width: 900px)
-  
-
   .sheet
     padding: 0
-
   .sheet__title
     font-size: 48px
-
-  .sheet__lead
-    font-size: 20px
-
   .sheet__body
     font-size: 22.5px
-
     blockquote
       padding-left: 40px

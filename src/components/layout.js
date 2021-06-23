@@ -47,29 +47,22 @@ const TemplateWrapper = ({ children }) => {
             seo={data.datoCmsHome.seoMetaTags}
           />
           <div className="container__sidebar">
-            <div className="sidebar">
+            <div className="sidebar shadow">
             <div className="profile">
-            <Link to="/"><img src="https://www.datocms-assets.com/45905/1619031028-tdn.jpg" alt="Ted D Nguyen" /></Link>
+            <Link to="/"><img className="shadow" src="https://www.datocms-assets.com/45905/1619031028-tdn.jpg" alt="Ted D Nguyen" /></Link>
               </div>
               <h6 className="sidebar__title">
-                <Link to="/about">{data.datoCmsSite.globalSeo.siteName}</Link>
+                <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
               </h6>
-              <div
-                className="sidebar__intro"
-                dangerouslySetInnerHTML={{
-                  __html:
-                    data.datoCmsHome.introTextNode.childMarkdownRemark.html
-                }}
-              />
               <ul className="sidebar__menu">
                 <li>
-                  <Link to="/">Hi, I'm Ted</Link>
+                  <Link  activeClassName='is-active' to="/">Hi, I'm Ted</Link>
                 </li>
                 <li>
-                  <Link to="/projects">My Work</Link>
+                  <Link  activeClassName='is-active' to="/projects">Recent Projects</Link>
                 </li>
                 <li>
-                  <Link to="/about">Contact Me</Link>
+                  <Link  activeClassName='is-active' to="/resume">My Resume</Link>
                 </li>
               </ul>
               <p className="sidebar__social">

@@ -1,5 +1,5 @@
 .sidebar
-  background: rgba(255,255,255,.5)
+  background: rgba($card-color,.75)
   position: relative
   padding: 25px
   
@@ -20,7 +20,7 @@
 
 .sidebar__intro
   color: $dark-body-color
-  font-size: 15px
+  font-size: 25px
   margin-bottom: 20px
   text-align: center
   p
@@ -31,18 +31,19 @@
 
 .sidebar__menu
   margin-bottom: 20px
-  text-align: center
 
   li
-    display: inline-block
+    display: block
     margin: 0 25px
+    padding: 10px
+    background: rgba($card-color, .5)
     a
       text-decoration: none
       display: block
       padding-left: 20px
-      color: $dark-body-color
+      color: $active-color
       position: relative
-
+      font-size: 20px
       &:before
         content: ""
         position: absolute
@@ -58,11 +59,13 @@
         opacity: 0.6
 
       &:hover
-        color: $active-color
+        color: $accent-hover
 
-    &.is-active a
-      font-weight: bold
-      color: $active-color
+    .is-active
+      font-weight: 800
+      color: $accent-color
+      &:hover
+        color: $accent-color
 
 .sidebar__social
   margin-bottom: 20px
