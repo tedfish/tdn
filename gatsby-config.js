@@ -10,8 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
-        plugins: [`gatsby-remark-responsive-iframe`]
+        apiToken: process.env.DATO_API_TOKEN
       },
     },
   ],
