@@ -244,15 +244,44 @@
               }
             }
             @media print {
+              .masthead {
+                text-align: center;
+              }
               * {
-                font-size: 12.5px !important;
+                font-size: 15px !important;
                 color: black !important;
               }
               h1 {
                 font-size: 25px !important;
               }
+              h3 {
+                color: var(--color-accent) !important;
+                font-size: 12.5px !important;
+                text-transform: uppercase;
+                grid-column: side;
+                margin: 0;
+                text-align: left;
+                font-weight: 800;
+              }
               body {
+                background: var(--color-background);
+                color: var(--color-primary);
+                display: grid;
+                font: 1.25em/1.5 'Mulish', sans-serif;
+                font-weight: 400;
                 gap: 1em;
+                grid-template-columns:
+                  [full-start]
+                  1fr
+                  [main-start side-start]
+                  minmax(min-content, 0em)
+                  [side-end content-start]
+                  minmax(min-content, 100em)
+                  [main-end content-end]
+                  1fr
+                  [full-end];
+                grid-template-rows: auto [content] 0;
+                margin-bottom: 4em;
               }
               .icon-list {
                 display: none;
@@ -326,6 +355,16 @@
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg> <span class="network">Github</span>
+
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-printer">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg> <a href="javascript:window.print()">Print resume</a>
 
                 </li>
             </ul>
