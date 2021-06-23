@@ -10,11 +10,13 @@
   a
     display: block
     text-align: center
-    font-size: 22.5px
+    font-size: 35px
     text-transform: uppercase
     text-decoration: none
-    color: $dark-body-color
-    font-weight: 600
+    color: rgba($dark-body-color, .5)
+    font-weight: 200
+    border-bottom: 1px solid rgba($dark-body-color, .5)
+    line-height: 2
     &:hover
       color: #9055a2
 
@@ -44,6 +46,18 @@
       color: $active-color
       position: relative
       font-size: 20px
+      font-weight: 200
+      
+
+      &:hover
+        color: $accent-hover
+
+    .is-active
+      font-weight: 600
+      color: $accent-color
+      font-size: 25px
+      &:hover
+        color: $accent-color
       &:before
         content: ""
         position: absolute
@@ -58,14 +72,6 @@
         background-size: contain
         opacity: 0.6
 
-      &:hover
-        color: $accent-hover
-
-    .is-active
-      font-weight: 800
-      color: $accent-color
-      &:hover
-        color: $accent-color
 
 .sidebar__social
   margin-bottom: 20px
