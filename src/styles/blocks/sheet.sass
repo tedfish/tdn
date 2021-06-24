@@ -31,10 +31,20 @@
   padding: 0
 .sheet__home
   background: $light-bg-color
+  h2
+    text-align: center
+    font-size: 30px
+    font-weight: 200
+    padding: 25px
+    background: $dark-body-color
   .logos
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    background: $accent-hover
+    .item
+      padding: 15px
+      width: 150px
+      height: 50px
+      margin: 15px
+      background: white
   .sheet__title
     text-align: center
     line-height: 2
@@ -55,7 +65,6 @@
       font-size: 25px
       font-weight: 200
       background: $card-color
-
 .sheet__about
   padding: 50px !important
   background: $light-body-color
@@ -118,6 +127,6 @@
     blockquote
       padding-left: 40px
   .sheet__introText
-    font-size: 45px !important
+    font-size: 30px !important
   .sheet__lead
     font-size: 30px !important

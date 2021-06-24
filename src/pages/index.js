@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Masonry from 'react-masonry-component'
 import Img from 'gatsby-image'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Layout from "../components/layout"
@@ -18,13 +19,16 @@ const IndexPage = ({ data }) => (
           <p className="sheet__lead">{data.home.subtitle}</p>
           <div className="sheet__introText" dangerouslySetInnerHTML={{ __html: data.home.introText }} />
         </div>
-        <div class="logos">
+        <h2>
+          Technologies I Use
+        </h2>
+        <Masonry className="logos">
           {data.home.logos.map((item, i) => (
-              <div key={i}>
+              <div className="item shadow" key={i}>
                 <Img fluid={item.fluid}/>
               </div>
             ))}
-        </div>
+        </Masonry>
       </div>
     </article>
   </Layout>
