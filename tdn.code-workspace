@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"editorGroup.border": "#f0f000",
+			"panel.background": "#111",
+			"panel.border": "#f00000",
+			"editor.background": "#000",
+			"editor.selectionBackground": "#703080a4",
+			"editor.selectionHighlightBackground": "#50803052",
+			"editor.findMatchBackground": "#807830df",
+			"editor.findMatchHighlightBackground": "#80307350",
+			"editorCodeLens.foreground": "#80307350",
+			"editor.rangeHighlightBackground": "#f306cb50"
+		}
+	}
+}
