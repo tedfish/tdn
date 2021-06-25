@@ -1,18 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Masonry from 'react-masonry-component'
-import Img from 'gatsby-image'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Layout from "../components/layout"
+import {Img} from 'react-image'
 const IndexPage = ({ data }) => (
   <Layout>
     <article className="sheet sheet__home">
       <HelmetDatoCms seo={data.home.seoMetaTags} />
       <div className="sheet__inner">
         <div className="hero_container">
-          <div className="sheet__hero">
-            <Img fluid={data.home.photo.fluid} />
-          </div>
+          <Img src={data.home.photo.url} alt="A big hole in the ground"/>
           <h1 className="sheet__title">{data.home.title}</h1>
         </div>
         <div className="content_container shadow">
@@ -25,7 +23,7 @@ const IndexPage = ({ data }) => (
         <Masonry className="logos">
           {data.home.logos.map((item, i) => (
               <div className="item shadow" key={i}>
-                <Img fluid={item.fluid}/>
+                <Img src={item.url} alt="TTTT"/>
               </div>
             ))}
         </Masonry>
@@ -45,15 +43,10 @@ export const query = graphql`
       introText
       logos {
         url
-        fluid(maxWidth: 200, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
-        }
       }
       content
       photo {
-        fluid(maxWidth: 2000, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
-        }
+        url
       }
     }
   }
