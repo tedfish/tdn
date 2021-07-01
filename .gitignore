@@ -6,4 +6,4 @@ node_modules
 public/
 .DS_Store
 .env
-workspace.code-workspace
+*.code-workspace
