@@ -32,18 +32,23 @@
 .sheet__home
   background: $light-bg-color
   h2
+    text-transform: uppercase
     text-align: center
     font-size: 22.50px
     font-weight: 400
     padding: 50px 0 5px
     color: $dark-body-color
+    line-height: 2
+    strong
+      font-weight: 600
+      color: $accent-hover
+
   .logos
     width: 66%
-    margin: 0 auto 250px
-    
+    margin: 0 auto 50px
     .item
-      padding: 15px
-      width: 200px
+      padding: 25px
+      width: 220px
       height: 125px
       margin: 7.5px
       background: white
@@ -52,6 +57,9 @@
         width: 100%
         height: 100%
         object-fit: contain
+      &.small
+        width: 150px
+        height: 100px
   .hero_container img
     display: block
       
