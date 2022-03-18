@@ -7,7 +7,7 @@ const Resume = ({ data: { resume } }) => (
     <article className="sheet sheet__resume">
       <HelmetDatoCms seo={resume.seoMetaTags} />
       <div className="sheet__inner">
-      <iframe src="https://haveyoumetted.com/resume.html" width="100%" height="1000" title="My Resume"></iframe>
+      <iframe src="https://haveyoumetted.com/resume.html" width="100%" height="1000" title="Ted Nguyen Resume"></iframe>
       </div>
     </article>
   </Layout>
